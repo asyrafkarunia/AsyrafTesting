@@ -24,15 +24,4 @@ body {
 .badan span {
     color:blue
 }
- .a {
-  width: 100px;
-  height: 100px;
-  background: red;
-  transition: width 2s, height 2s, transform 2s;
-}
-
-a:hover {
-  width: 300px;
-  height: 300px;
-  transform: rotate(180deg);
-}
+ 
