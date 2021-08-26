@@ -1,6 +1,10 @@
+body {
+    margin: 0;"
+    font-family: "Lucida Grande";
+}    
 .badan {
     text-align: center;
-    font-family: "Lucida Grande";
+  
 }
 .badan h2 {
     font-size: 25px;
