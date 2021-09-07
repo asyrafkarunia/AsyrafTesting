@@ -1,27 +1,45 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AKA</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="stylesheet" type="text/css" href="responsive.css">
-  <link rel="shortcut icon" href="favicon.ico" >
-</head>
-<body>
-    <div class="Punya-Asyraf">
-      <div class="Punya">
-        </div>
-        <div class="badan">
-          <h2>Layanan Kami </h2>
-          <p>Kami Menyediakan Bimbingan Belajar bagi para murid kami yang antusias dengan sistem paced-learning, dengan sistem ini para murid bisa bebas mengatur jadwal belajar mereka , tentu saja dengan disertai disiplin belajar yang ketat. Kurikulum Yang kami bawakan Fresh dan relevan dengan perkembangan dunia kerja.  </p>
-          <h1>Customer Service <span>24/7</span></h1>
-          <p>Anda bisa dengan kapan saja menghubungi layanan Customer Service kami, karena layanan kami dapat selalu menemani anda.</p>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+<html lang="en">
 
-   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Asrap</title>
+</head>
+<style>
+    body {
+        background-color: blanchedalmond;
+    }
+</style>
+
+<body>
+    <div>
+        <h1 style="color: black; text-align: left;">Masukkan Angkanya Kakak :)</h1>
+
+        <input class="asrap" type="number" id="angka1">
+        <select style="background-color: black; color: aliceblue;" id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="number" id="angka2">
+        <span>=</span>
+        <span style="font-family:'Lucida Grande'; font-size: 20px; color: black;" id="hasil"> Hmm... hasilnya apa ya?</span><br><br>
+        <button id="submit">Submit</button>
+    </div>
+    <script>
+        const angka1 = document.getElementById('angka1')
+        const angka2 = document.getElementById('angka2')
+        const operator = document.getElementById('operator')
+        const hasil = document.getElementById('hasil')
+        const submit = document.getElementById('submit')
+
+        submit.addEventListener('click', function() {
+            hasil.innerText = eval(angka1.value + operator.value + angka2.value)
+        })
+    </script>
+</body>
+
+</html>
